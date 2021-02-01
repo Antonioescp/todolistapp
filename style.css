@@ -1,0 +1,124 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: crimson;
+	color: white;
+	font-family: 'Nunito', sans-serif;
+
+	padding: 0 0 25px 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+.flex_container{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.tile{
+	width: 90vw;
+	background: white;
+	color: black;
+	border-radius: 10px;
+	padding: 0 25px 25px 25px;
+
+	margin: 25px 0 0 0;
+}
+
+.tile > p, .tile > h1{
+	margin: 25px 0 0 0;
+}
+
+.items{
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	padding: 0 25px 15px 25px;
+
+	flex-flow: column wrap;
+
+	//border: 2px dashed magenta;
+}
+
+.items:last-child{
+	padding-bottom: 10px;
+}
+
+.item{
+	width: 500px;
+	max-width: 100%;
+	
+	border-radius: 10px;
+	margin: 15px 0 0 0;
+	padding: 0 0 0 15px;
+
+	background: antiquewhite;
+
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	height: 50px;
+
+	position: relative;
+
+	overflow: auto;
+}
+
+.item > p{
+	margin: 0 0 0 10px;
+	font-weight: bold;
+}
+
+.delete_item{
+	height: 100%;
+	width: 25px;
+	
+	border-left: 2px solid crimson;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	position:absolute;
+	right:0;
+
+	color:crimson;
+}
+
+.delete_item:hover{
+	color: white;
+	background: crimson;
+}
+
+.add_item_container{
+	width: 500px;
+	max-width: 100%;
+
+	//border: 2px dashed magenta;
+
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+#add_item_button, #add_item_input{
+	height: 35px;
+}
+
+#add_item_input{
+	margin: 0 0 0 10px;
+	width: 100%;
+
+	border:1px outset silver;
+	border-radius: 5px;
+	padding-left: 5px;
+}
